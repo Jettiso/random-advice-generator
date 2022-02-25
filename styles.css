@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 3rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: rgb(15, 14, 14);
+}
+
+.card h1 {
+    text-align: left;
+    padding-bottom: 1rem;
+    color: #5253aa;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 3rem;
+    color: #5253aa;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+    background: #009fff; /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(
+        to right,
+        #ec2f4b,
+        #009fff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(
+        to right,
+        #ec2f4b,
+        #009fff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-size: 300%;
+    background-position: left;
+    text-align: center;
+    animation: gradientmove 1.5s infinite alternate;
+
+}
+@keyframes gradientmove {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+#btn {
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+
+    color: rgb(7, 7, 7);
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background: #fc466b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #3f5efb,
+        #fc466b
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #3f5efb,
+        #fc466b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #ffffff;
+}
+
+#btn:hover {
+    cursor: pointer;
+}
+
