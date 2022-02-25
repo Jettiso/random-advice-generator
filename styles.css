@@ -14,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(0, 0, 0);
+    flex-direction: column;
 }
 
 .card {
@@ -34,13 +35,13 @@ body {
 .card h1 {
     text-align: left;
     padding-bottom: 1rem;
-    color: #5253aa;
+    color: #dcddf0;
     text-align: center;
 }
 
 .card h2 {
     margin-bottom: 3rem;
-    color: #5253aa;
+    color: #dcddf0;
     text-align: center;
 }
 
@@ -105,3 +106,54 @@ body {
     cursor: pointer;
 }
 
+h4 {
+    color: white;
+    margin-top: 1.5rem;
+}
+
+a {
+    background: #009fff; /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(
+        to right,
+        #ec2f4b,
+        #009fff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(
+        to right,
+        #ec2f4b,
+        #009fff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    position: relative;
+    text-decoration: none;
+}
+
+a:after {
+    content: "";
+        position: absolute;
+        background: #fc466b; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+            to right,
+            #3f5efb,
+            #fc466b
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+            to right,
+            #3f5efb,
+            #fc466b
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -8px;
+        transition: 0.3s;
+}
+
+a:hover:after {
+    width: 100%;
+}
